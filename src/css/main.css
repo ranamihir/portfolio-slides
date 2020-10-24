@@ -1,5 +1,13 @@
 * {
+  margin: 0;
+  border: 0;
+  padding: 0;
   box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,6 +19,17 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+}
+
+/* Header Links */
+.header-link {
+  padding: 4px 0;
+  text-decoration: none;
+  color: inherit;
+  border: 0;
+}
+.header-link:hover {
+  border-bottom: 2px solid;
 }
 
 /* Overrides */

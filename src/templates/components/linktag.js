@@ -13,22 +13,22 @@ const styles = {
     background: '#474f85',
   },
   _tag_text: {
-    fontSize: 11,
+    fontSize: 12,
     color: '#fff',
   },
   _link: {
     display: 'inline-block',
     border: 0,
-    borderRadius: 20,
+    borderRadius: 5,
     padding: '2px 8px',
-    background: '#f0f0f0',
-    textDecoration: 'underline',
+    background: '#4285f4',
+    textDecoration: 'none',
     '&:hover': {
-      background: '#eaeaea',
+      background: '#3f51b5',
     },
   },
   _link_text: {
-    color: '#333',
+    color: '#ffffff',
     fontFamily: 'arial !important',
   },
 };
@@ -37,7 +37,12 @@ const LinkTag = props => {
   const { style, classes, text, link, background, color } = props;
   if (link && link.length > 0) {
     return (
-      <a href={link} className={classes._link} style={{ ...style }}>
+      <a
+        href={link}
+        target="_blank"
+        className={classes._link}
+        style={{ ...style }}
+      >
         <Typography className={classes._link_text} style={{ color }}>
           {text}
         </Typography>

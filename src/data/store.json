@@ -1,4 +1,8 @@
 {
+  "siteContext": {
+    "style": "1-page",
+    "showHeader": true
+  },
   "section": [
     {
       "order": 0,
@@ -9,7 +13,7 @@
       },
       "data": {
         "title": "Mihir Rana",
-        "subtitle1": "MS in Data Science Candidate",
+        "subtitle1": "Master's in Data Science Candidate",
         "subtitle2": "NYU Center for Data Science",
         "imagePath": "css/resources/8270471.jpg",
         "social": [
@@ -28,7 +32,7 @@
         ],
         "bio": {
           "title": "Research Interests",
-          "body": "Computer Vision, Representation learning, Natural Language Understanding"
+          "body": "Computer Vision, Natural Language Reasoning and Understanding, Reinforcement Learning, and Imitation Learning"
         }
       }
     },
@@ -47,10 +51,10 @@
             "date": "Expected - May 2019",
             "title": "New York University, NY",
             "subtitle": "Master of Science (Data Science)",
-            "desc": "• Relevant Coursework: Deep Learning, Computer Vision, Natural Language Processing, Reinforcement Learning, Machine Learning, Variational Inference, Big Data, Optimization, Probability and Statistics\n• Teaching Assistant for Deep Learning (Yann LeCun), Computer Vision (Rob Fergus), Machine Learning (David Rosenberg), and Introduction to Data Science (Brian D’alessandro)",
+            "desc": "• Relevant Coursework: Deep Learning, Computer Vision, Natural Language Processing/Understanding, Reinforcement Learning, Machine Learning, Variational Inference, Big Data, Optimization, Probability and Statistics\n• Teaching Assistant for Deep Learning (Yann LeCun), Computer Vision (Rob Fergus), Machine Learning (David Rosenberg), and Introduction to Data Science (Brian D’alessandro)",
             "tags": [
               {
-                "text": "GPA: 3.94 / 4.0"
+                "text": "GPA: 3.95 / 4.0"
               }
             ]
           },
@@ -58,7 +62,7 @@
             "icon": "graduation-cap",
             "date": "July 2013 - May 2017",
             "title": "Indian Institute of Technology Roorkee, India",
-            "subtitle": "B. Tech., Major: Mechanical Engg, Minor: Computer Science",
+            "subtitle": "Bachelor of Technology, Major: Mechanical Engineering, Minor: Computer Science",
             "desc": "• Relevant Coursework: Design and Analysis of Algorithms, Data Structures, Database Management Systems, Discrete Structures, Computer Architecture and Microprocessors, Numerical Optimization, Numerical Algorithms, Calculus",
             "tags": [
               {
@@ -81,10 +85,10 @@
         "events": [
           {
             "icon": ["fab", "tripadvisor"],
-            "date": "June - August 2018",
+            "date": "August 2019 - Present",
             "title": "TripAdvisor LLC",
-            "subtitle": "Machine Learning Scientist Intern (Experiences & Rentals)",
-            "desc": "• Built models to automatically map 100k+ products on Viator with their relevant attractions on TripAdvisor\n• Final 3-class classification NLP model comprising fuzzy string matching similarities, n-gram similarities (soft-tfidf, monge-elkan) and features based on Named Entity Recognition and truncated SVD achieved accuracy of 83%\n• Impressions-to-bookings list-wise learning-to-rank (LTR) model to sort order of products gave MRR of 0.58 and mAP@5 of 0.6",
+            "subtitle": "Machine Learning Scientist (Triapdvisor B2C)",
+            "desc": "• Built zero-shot low-resource multi-label NLP classification model to categorize ~360k products into any of 400+ relevant tags\n• Built universal embeddings for all place types (hotels, restaurants, attractions, tours) to reduce downstream task-specific feature engineering and enable better cross-selling sorts and recommendations\n• Developed and maintain an open-sourced lightweight package for all PyTorch-based projects deployed in the company",
             "tags": [
               {
                 "text": "Python"
@@ -168,29 +172,10 @@
         "pageTitle": "Projects",
         "events": [
           {
-            "icon": "language",
-            "date": "September - December 2018",
-            "title": "Neural Machine Translation System",
-            "subtitle": "Prof. Kyunghyun Cho, New York University and Facebook AI Research",
-            "desc": "• Built NMT system for translating Chinese (zh) to English (en) and Vietnamese (vi) to English\n• Used bidirectional LSTM and Convolutional neural networks for encoder-decoder architecture with Luong attention mechanism\n• Best model attained BLEU scores of 24 and 19 with Beam Search on IWSLT 2015 vi → en and zh → en datasets",
-            "tags": [
-              {
-                "text": "PyTorch"
-              },
-              {
-                "text": "Git"
-              },
-              {
-                "text": "[code]",
-                "link": "https://github.com/avidkenil/NLP_Project/"
-              }
-            ]
-          },
-          {
             "icon": "brain",
             "date": "September - December 2018",
             "title": "Visual Embeddings for Reinforcement Learning",
-            "subtitle": "Prof. Rob Fergus, New York University and Facebook AI Research",
+            "subtitle": "Advised by Rob Fergus, New York University and Facebook AI Research",
             "desc": "• Trained RL agent to solve hard exploration mazes by watching few expert demonstration videos\n• Used self-supervised Computer Vision task to generate embeddings and used them to guide agent via Imitation Learning",
             "tags": [
               {
@@ -203,12 +188,50 @@
                 "text": "Git"
               },
               {
-                "text": "[code]",
+                "text": "code",
                 "link": "https://github.com/ranamihir/visual_embeddings_for_rl"
               },
               {
-                "text": "[demo]",
+                "text": "demo",
                 "link": "https://github.com/ranamihir/visual_embeddings_for_rl/blob/master/material/mazes.gif"
+              }
+            ]
+          },
+          {
+            "icon": "language",
+            "date": "September - December 2018",
+            "title": "Neural Machine Translation System",
+            "subtitle": "Advised by Kyunghyun Cho, New York University and Facebook AI Research",
+            "desc": "• Built NMT system for translating Chinese (zh) to English (en) and Vietnamese (vi) to English\n• Used bidirectional LSTM and Convolutional neural networks for encoder-decoder architecture with Luong attention mechanism\n• Best model attained BLEU scores of 24 and 19 with Beam Search on IWSLT 2015 vi → en and zh → en datasets",
+            "tags": [
+              {
+                "text": "PyTorch"
+              },
+              {
+                "text": "Git"
+              },
+              {
+                "text": "code",
+                "link": "https://github.com/avidkenil/NLP_Project/"
+              }
+            ]
+          },
+          {
+            "icon": "code",
+            "date": "Ongoing",
+            "title": "Pytorch Common",
+            "subtitle": "A lightweight wrapper aimed at taking the burden off of the scientist of writing all the boilerplate code",
+            "desc": "• Make use of Pytorch available to people without in-depth knowledge of it while providing enormous flexibility and support for hardcore users,\n• Heavy under-the-hood optimization for fast- and memory-efficient performance,\n• Ability to change all settings (e.g. model, loss, metrics, devices, hyperparameters, artifact directories, etc.) directly from config.",
+            "tags": [
+              {
+                "text": "PyTorch"
+              },
+              {
+                "text": "Git"
+              },
+              {
+                "text": "code",
+                "link": "https://github.com/ranamihir/pytorch_common"
               }
             ]
           },
@@ -216,7 +239,7 @@
             "icon": "camera-retro",
             "date": "February - May 2018",
             "title": "Generatively Removing Photobomers",
-            "subtitle": "Prof. Yann LeCun, New York University and Facebook AI Research",
+            "subtitle": "Advised by Yann LeCun, New York University and Facebook AI Research",
             "desc": "• Developed a pipeline to efficiently remove photobombers in images and replace them with background\n• Model used Mask-RCNN using Facebook’s Detectron for instance segmentation and Deep Image Prior for inpainting",
             "tags": [
               {
@@ -226,7 +249,7 @@
                 "text": "Git"
               },
               {
-                "text": "[code]",
+                "text": "code",
                 "link": "https://github.com/ranamihir/dl_project"
               }
             ]
@@ -235,7 +258,7 @@
             "icon": "comments",
             "date": "February - May 2018",
             "title": "Toxic Comment Classification",
-            "subtitle": "Prof. David S. Rosenberg, New York University",
+            "subtitle": "Advised by David S. Rosenberg, New York University",
             "desc": "• Built multi-class multi-label models to classify Wikipedia comments into different levels of toxicity and profanity\n• Achieved macro-AUC of 0.98 with fastText; 0.97 with ensemble of XGBoost and Naive-Bayes SVM (self-implemented)",
             "tags": [
               {
@@ -245,8 +268,55 @@
                 "text": "Git"
               },
               {
-                "text": "[code]",
+                "text": "code",
                 "link": "https://github.com/ranamihir/ml_project"
+              }
+            ]
+          },
+          {
+            "icon": "balance-scale",
+            "date": "September - December 2017",
+            "title": "Predicting Prison Parole Board Decisions",
+            "subtitle": "Advised by Brian D'alessandro, New York University",
+            "desc": "• Developed a framework for predicting if a US federal prison inmate will be granted or denied parole based on historic data\n• Ensembling with Logistic Regression and XGBoost achieved an ROC AUC value of 0.71",
+            "tags": [
+              {
+                "text": "Python (sklearn)"
+              },
+              {
+                "text": "Git"
+              },
+              {
+                "text": "code",
+                "link": "https://github.com/ranamihir/intro_to_ds_project"
+              }
+            ]
+          },
+          {
+            "icon": "pencil-ruler",
+            "date": "July 2016 - May 2017",
+            "title": "Data Driven Modeling of Composites",
+            "subtitle": "Advised by Siladitya Pal, IIT Roorkee",
+            "desc": "• Designed composite materials by developing algorithmic frameworks from simulated data to predict and recommend properties\n• Employed ML algorithms (e.g., XGBoost, SVM) and Surrogate Modeling techniques with self-engineered features\n• Model achieved 99.6% accuracy and reduced average computation time from 2-3 days to 10 minutes",
+            "tags": [
+              {
+                "text": "Python (sklearn)"
+              },
+              {
+                "text": "opencv"
+              },
+              {
+                "text": "R"
+              },
+              {
+                "text": "SQL"
+              },
+              {
+                "text": "Git"
+              },
+              {
+                "text": "code",
+                "link": "https://github.com/ranamihir/btp"
               }
             ]
           }
@@ -262,7 +332,7 @@
       },
       "data": {
         "pageTitle": "Skills & Achievements",
-        "content": "• Computer Languages: Python, C++, Java, R, SQL, Ruby, JavaScript (Node, Angular, D3), Shell scripting, Git, LaTeX\n\n• Tools and Technologies: PyTorch, TensorFlow, scikit-learn, Spark, Hive, Hadoop, Google BigQuery, OpenAI Gym, TensorBoard\n\n• Scholarships: KVPY Fellowship from IISc Bangalore, Coca-Cola Scholarship (Chemistry), C.V. Narasimhan Scholarship (Physics)\n\n• Co-/Extra-curricular Activities: Co-founded Data Science Group at IIT-R to conduct lectures, research talks, etc.; Ranked in top 10 in several ML competitions on AnalyticsVidhya; Head of Department at Team KNOx (Automobile Manufacturing Group)"
+        "content": "• Computer Languages: Python, C++, Java, R, SQL, Ruby, JavaScript (Node, Angular, D3), Shell scripting, Git, LaTeX\n\n• Tools and Technologies: PyTorch, TensorFlow, Docker, scikit-learn, Spark, Hive, Hadoop, Google BigQuery, OpenAI Gym, TensorBoard\n\n• Scholarships: KVPY Fellowship from IISc Bangalore, Coca-Cola Scholarship (Chemistry), C.V. Narasimhan Scholarship (Physics)\n\n• Co-/Extra-curricular Activities: Co-founded Data Science Group at IIT-R to conduct lectures, research talks, etc.; Ranked in top 10 in several ML competitions on AnalyticsVidhya; Head of Department at Team KNOx (Automobile Manufacturing Group)"
       }
     }
   ]
